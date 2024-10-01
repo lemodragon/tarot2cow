@@ -15,7 +15,7 @@ from common.expired_dict import ExpiredDict
 @register(
     name="Tarot2cow",
     desc="A plugin for tarot divination with multiple themes and configurable daily limits.",
-    version="6.7",
+    version="6.6",
     author="lemodragon",
     desire_priority=90
 )
@@ -238,10 +238,10 @@ class Tarot2cow(Plugin):
         return cleaned_text
 
     def get_help_text(self, **kwargs):
-        help_text = "🔮 塔罗牌占卜插件使用指南：\n\n"
+        help_text = "🔮使用指南：\n"
         help_text += f"1. 输入 '{self.divine_prefixes[0]}' 进行完整的塔罗牌占卜\n"
         help_text += f"2. 输入 '{self.tarot_prefixes[0]}' 抽取单张塔罗牌\n"
-        help_text += f"3. 输入 '{self.interpret_prefix}' 获取最近一次抽牌的详细解读\n\n"
+        help_text += f"3. 输入 '{self.interpret_prefix}' 获取最近一次抽牌的详细解读\n"
         if self.enable_daily_limit:
             help_text += f"注意：每位用户每天可以进行 {self.daily_divine_limit} 次占卜和 {self.daily_tarot_limit} 次单张塔罗牌抽取。次日凌晨00:00后重置次数。"
         return help_text
