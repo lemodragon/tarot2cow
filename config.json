@@ -1,0 +1,9 @@
+{
+  "chain_reply": true,
+  "auto_update": true,
+  "enable_daily_limit": true,
+  "daily_divine_limit": 1,
+  "daily_tarot_limit": 1,
+  "divine_prefixes": ["%占卜", "？占卜"],
+  "tarot_prefixes": ["%塔罗牌", "？塔罗牌"]
+}

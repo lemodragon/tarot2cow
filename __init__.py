@@ -1,0 +1,1 @@
+from .tarot2cow import *
